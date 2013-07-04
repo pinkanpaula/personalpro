@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Fullscreen Layout with Page Transitions</title>
+		<meta name="description" content="Fullscreen Layout with Page Transitions" />
+		<meta name="keywords" content="fullscreen layout, boxes, responsive, page transitions, css transitions, jquery, portfolio, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<div id="bl-main" class="bl-main">
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-about">About us</h2>
+					</div>
+					<div class="bl-content">
+						<h2>About us</h2>
+						<p>
+							<ul>
+							<li data-panel="abimg-1"><a href="#"><img src="images/lg1.jpg" /></a></li>
+							<li data-panel="abimg2-2"><a href="#"><img src="images/lg2.jpg" /></a></li>
+							<li data-panel="abimg-3"><a href="#"><img src="images/lg3.jpg" /></a></li>							
+							</ul>	
+						</p>
+						<p>
+						We grow calamansi lime in our garden and make palm sugar and produce products from them. 
+						</p>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-works">Product</h2>
+					</div>
+					<div class="bl-content">
+						<h2>Our Product</h2>
+						<p>We produce jam, syrup made from calamansi lime home grown in our garden and 100% pure brown sugar.</p>
+						<ul id="bl-work-items">
+							<li data-panel="panel-1"><a href="#"><img src="images/p1.jpg" /></a></li>
+							<li data-panel="panel-2"><a href="#"><img src="images/p3.jpg" /></a></li>
+							<li data-panel="panel-3"><a href="#"><img src="images/p2.jpg" /></a></li>
+							
+						</ul>
+						<!--<p>Illustrations by <a href="http://dribbble.com/isaac317/click">Isaac Montemayor</a></p>-->
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-blog">How to order</h2>
+					</div>
+					<div class="bl-content">
+						<h2>By Phone</h2>
+						<article>
+							<h3></h3>
+							<p>Contact us at +62 8211 0456 377 and we will ship your order</p>
+						</article>
+						
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-contact">Contact</h2>
+					</div>
+					<div class="bl-content">
+						<h2>Get in touch</h2>
+						<p>Call us at +62 8211 0456 377</p>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- Panel items for the works -->
+				<div class="bl-panel-items" id="bl-panel-work-items">
+					<div data-panel="panel-1">
+						<div>
+							<img src="images/p1.jpg" />
+							<h3>Lime Jam</h3>
+							<p>Our lime jam is made from home grown calamansi lime planted in our garden mixed with 100% pure palm sugar</p>
+						</div>
+					</div>
+					<div data-panel="panel-2">
+						<div>
+							<img src="images/p3.jpg" />
+							<h3>Palm Sugar</h3>
+							<p>We produce 100% pure and low calorie palm sugar</p>
+						</div>
+					</div>
+					<div data-panel="panel-3">
+						<div>
+							<img src="images/p2.jpg" />
+							<h3>Lime Syrup</h3>
+							<p>Our lime syrup is made from our home grown calamansi lime</p>
+						</div>
+					</div>
+					
+					<nav>
+						<span class="bl-next-work">&gt; Next Product</span>
+						<span class="bl-icon bl-icon-close"></span>
+					</nav>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/boxlayout.js"></script>
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
+	</body>
+</html>
