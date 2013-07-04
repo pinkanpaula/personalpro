@@ -1,5 +1,3 @@
-FullscreenLayoutPageTransitions
-=========
-
-This responsive layout is based on an initial grid of four boxes. Once a box is clicked, it gets resized to fullscreen and the other boxes scale down and fade out. In the work section we experiment with another transition which is to show a panel by making it appear from the bottom while scaling the current one down. To see it in action, open the work section and click on one of the portfolio items and navigate through them.
-
+A simple web page using HTML 5.CSS,JQUery for my parent's home business.
+There are 4 sections which are About, Product, How to order, and Contact Us.
+All sections are initially displayed in one single page and clicking each grid will display each sections full screen.
